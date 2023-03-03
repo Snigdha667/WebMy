@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            margin:10px;
+            padding: 10px;
+        }
+        button{  margin:10px;
+            padding: 10px;}
+        .r{
+            background-color: blue;
+        color: white;        }
+        .e{
+            background-color: green; color: white;       
+        }
+        .d{
+            background-color: red;
+            color: white;
+        }
+    .product{
+        border: 0.1px solid black;
+        margin:10px; padding: 10px;
+    }
+    .med{
+        background-color: yellow;
+        border: 0.1px solid black;
+    }
+    .dis{
+        background-color: yellow;
+        border: 0.1px solid black;
+        color:white;
+    }
+        </style>
+</head>
+<body>
+    <h1 class="med">Medium</h1>
+    <h2 class="dis">Discover, stories & articles from GLA Students</h2>
+    <a href="/articles/new"><button class="r">Add new Articles</button></a>
+
+    <section>
+       <% for(let item of products){%>
+            <article class="product">
+                <!-- <h1><%= item.heading %> </h1> -->
+                <h1><%= item.name %> </h1>
+                <p><%= item.date %> </p>
+                <p><%= item.desc %></p>
+                <a href="https://www.euronews.com/2023/03/02/ukraine-war-over-100-russian-tanks-destroyed-in-fighting-in-vuhledar-says-kyiv"><button class="r">Read More</button></a><button class="e">Edit</button><button class="d">Delete</button>
+                </article>
+                <% } %>
+                
+        
+
+    </section>
+</body>
+</html>

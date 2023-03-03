@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        text-align: center;
+    }
+    div{
+        margin:10px; padding: 10px;
+        
+    }
+    .c{
+        background-color: grey;
+        color: white;
+        display: inline;
+    }
+    .s{
+        background-color: blue;
+        color: white; display: inline;
+    }
+        </style>
+</head>
+<body>
+    <h1>New Article</h1>
+    <form action="/articles" method="POST">
+        <div class="form-control"><label for="name">Heading</label>
+        <input type="text" name="name" id="name"></div>
+
+
+
+
+
+<div class="form-control">
+
+<label for="date">Date</label>
+
+<input type="text" name="date" id="date"></div>
+<div class="form-control">
+    <label for="desc">Description</label>
+<textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+
+</div>
+<div><button class="c">Cancel</button> <button class="s">Save</button></div>
+
+
+    </form>
+</body>
+</html>
